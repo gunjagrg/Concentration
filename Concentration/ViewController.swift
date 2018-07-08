@@ -10,24 +10,36 @@ class ViewController: UIViewController {
     
     private(set) var flipCount: Int = 0 {
         didSet {
-            flipCountLabel.text = "Flips: \(flipCount)"
+            updateFlipCountLabel()
         }
     }
-
     
-    @IBOutlet private weak var flipCountLabel: UILabel!
+    @IBOutlet private weak var flipCountLabel: UILabel! {
+        didSet {
+            updateFlipCountLabel()
+        }
+    }
+    
     @IBOutlet private var cardButtons: [UIButton]!
     
     @IBAction private func touchCard(_ sender: UIButton) {
-        
+        flipCount += 1
         if let cardNumber = cardButtons.index(of: sender) {
             game.chooseCard(at: cardNumber)
             updateViewFromModel()
         } else {
             print("The chosen card was not in cardButtons.")
         }
-        flipCount += 1
         
+    }
+    
+    private func updateFlipCountLabel() {
+        let attributes: [NSAttributedString.Key : Any] = [
+            .strokeColor: #colorLiteral(red: 1, green: 0.5781051517, blue: 0, alpha: 1),
+            .strokeWidth: 5.0
+        ]
+        let attribtext = NSAttributedString(string: "Flips: \(flipCount)", attributes: attributes)
+        flipCountLabel.attributedText = attribtext
     }
     
     private func updateViewFromModel() {
