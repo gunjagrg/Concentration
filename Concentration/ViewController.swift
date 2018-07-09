@@ -67,7 +67,6 @@ class ViewController: UIViewController {
         }
         return emoji[card] ?? "?"
     }
-    
 
 }
 

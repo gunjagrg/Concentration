@@ -1,11 +1,3 @@
-//
-//  File.swift
-//  Concentration
-//
-//  Created by Gunja Gurung on 7/4/18.
-//  Copyright © 2018 Gunja Gurung. All rights reserved.
-//
-
 import Foundation
 
 struct Card: Hashable
@@ -29,4 +21,6 @@ struct Card: Hashable
     init() {
         self.identifier = Card.getUniqueIdentifier()
     }
+    
 }
+
