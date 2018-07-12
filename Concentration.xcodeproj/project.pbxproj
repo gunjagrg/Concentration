@@ -8,24 +8,24 @@
 
 /* Begin PBXBuildFile section */
 		1842DE6720ED82BB002AD4CD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1842DE6620ED82BB002AD4CD /* AppDelegate.swift */; };
-		1842DE6920ED82BB002AD4CD /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1842DE6820ED82BB002AD4CD /* ViewController.swift */; };
 		1842DE6C20ED82BB002AD4CD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1842DE6A20ED82BB002AD4CD /* Main.storyboard */; };
 		1842DE6E20ED82BD002AD4CD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1842DE6D20ED82BD002AD4CD /* Assets.xcassets */; };
 		1842DE7120ED82BD002AD4CD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1842DE6F20ED82BD002AD4CD /* LaunchScreen.storyboard */; };
 		1842DE7920EDAA84002AD4CD /* Concentration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1842DE7820EDAA84002AD4CD /* Concentration.swift */; };
 		1842DE7B20EDAAD7002AD4CD /* Card.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1842DE7A20EDAAD7002AD4CD /* Card.swift */; };
+		1881B56720F72595007FE52D /* ConcentrationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1881B56620F72595007FE52D /* ConcentrationViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		1842DE6320ED82BB002AD4CD /* Concentration.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Concentration.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1842DE6620ED82BB002AD4CD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		1842DE6820ED82BB002AD4CD /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		1842DE6B20ED82BB002AD4CD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		1842DE6D20ED82BD002AD4CD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		1842DE7020ED82BD002AD4CD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		1842DE7220ED82BD002AD4CD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1842DE7820EDAA84002AD4CD /* Concentration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Concentration.swift; sourceTree = "<group>"; };
 		1842DE7A20EDAAD7002AD4CD /* Card.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Card.swift; sourceTree = "<group>"; };
+		1881B56620F72595007FE52D /* ConcentrationViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConcentrationViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,8 +58,8 @@
 		1842DE6520ED82BB002AD4CD /* Concentration */ = {
 			isa = PBXGroup;
 			children = (
+				1881B56620F72595007FE52D /* ConcentrationViewController.swift */,
 				1842DE6620ED82BB002AD4CD /* AppDelegate.swift */,
-				1842DE6820ED82BB002AD4CD /* ViewController.swift */,
 				1842DE7820EDAA84002AD4CD /* Concentration.swift */,
 				1842DE7A20EDAAD7002AD4CD /* Card.swift */,
 				1842DE6A20ED82BB002AD4CD /* Main.storyboard */,
@@ -142,9 +142,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1842DE6920ED82BB002AD4CD /* ViewController.swift in Sources */,
 				1842DE7B20EDAAD7002AD4CD /* Card.swift in Sources */,
 				1842DE6720ED82BB002AD4CD /* AppDelegate.swift in Sources */,
+				1881B56720F72595007FE52D /* ConcentrationViewController.swift in Sources */,
 				1842DE7920EDAA84002AD4CD /* Concentration.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
