@@ -6,7 +6,7 @@
 
 import UIKit
 
-class ConcentrationThemeChooserViewController: UIViewController {
+class ConcentrationThemeChooserViewController: UIViewController, UISplitViewControllerDelegate {
 
     let themes = [
         "Sports": "⚽️🏀🏈⚾️🎾🏐🏉🎱🏓🏸🥅🏒⛳️🎣🥊🥋🎽⛸🥌🛷🎿⛷🤼‍♀️",
@@ -14,6 +14,25 @@ class ConcentrationThemeChooserViewController: UIViewController {
         "Faces": "👩👮‍♂️👨‍🎓👩‍🎤👨‍🎤👩‍🏫👨‍🏭👩‍🚀🎅🤶🤴🤦‍♂️🙋‍♂️🙋‍♀️👭👩‍👩‍👧👰👨‍🌾👩🏻‍🍳👨🏻‍🍳🙆🏻‍♀️👸🏼👩🏻‍🌾💁🏼‍♀️"
     ]
 
+    override func awakeFromNib() {
+        super.awakeFromNib()
+        splitViewController?.delegate = self
+    }
+    
+//    override func viewDidLoad() {
+//        splitViewController?.delegate = self
+//    }
+    
+    
+    func splitViewController(_ splitViewController: UISplitViewController, collapseSecondary secondaryViewController: UIViewController, onto primaryViewController: UIViewController) -> Bool {
+        if let cvc = secondaryViewController as? ConcentrationViewController {
+            if cvc.theme == nil {
+                return true
+            }
+        }
+        return false
+    }
+    
     private var splitViewDetailConcentrationViewController: ConcentrationViewController? {
         return splitViewController?.viewControllers.last as? ConcentrationViewController
     }
