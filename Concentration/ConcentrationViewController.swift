@@ -2,6 +2,14 @@ import UIKit
 
 class ConcentrationViewController: UIViewController {
     
+    var theme: String? {
+        didSet {
+            emojiChoices = theme ?? ""
+            emoji = [:]
+            updateViewFromModel()
+        }
+    }
+    
     private lazy var game = Concentration(pairsOfCards: numberOfPairsOfCards)
     
     var numberOfPairsOfCards: Int {
@@ -41,18 +49,21 @@ class ConcentrationViewController: UIViewController {
     }
     
     private func updateViewFromModel() {
-        for index in cardButtons.indices {
-            let button = cardButtons[index]
-            let card = game.cards[index]
-            if card.isFaceUp {
-                button.setTitle(emoji(for: card), for: UIControl.State.normal)
-                button.backgroundColor = #colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)
-            } else {
-                button.setTitle("", for: UIControl.State.normal)
-                button.backgroundColor = card.isMatched ? #colorLiteral(red: 1, green: 0.5781051517, blue: 0, alpha: 0) : #colorLiteral(red: 1, green: 0.5781051517, blue: 0, alpha: 1) //UIColor.clear : UIColor.orange
+        if cardButtons != nil {
+            for index in cardButtons.indices {
+                let button = cardButtons[index]
+                let card = game.cards[index]
+                if card.isFaceUp {
+                    button.setTitle(emoji(for: card), for: UIControl.State.normal)
+                    button.backgroundColor = #colorLiteral(red: 0.8374180198, green: 0.8374378085, blue: 0.8374271393, alpha: 0.4918400115)
+                } else {
+                    button.setTitle("", for: UIControl.State.normal)
+                    button.backgroundColor = card.isMatched ? #colorLiteral(red: 1, green: 0.5781051517, blue: 0, alpha: 0) : #colorLiteral(red: 0.4620226622, green: 0.8382837176, blue: 1, alpha: 1) //UIColor.clear : UIColor.orange
+                }
             }
         }
     }
+    
     
     //private var emojiChoices = ["👻", "🎃", "🍏", "🍆","🥝","🎾","🏀","🏉","🌽", "🍜", "🦈", "🐇", "🍀", "🌏", "🚜", "🏔", "🛰", "⌚️", "⏱", "🏝", "🦊",]
     private var emojiChoices = "👻🎃🍏🍆🥝🦊"

@@ -14,6 +14,7 @@
 		1842DE7920EDAA84002AD4CD /* Concentration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1842DE7820EDAA84002AD4CD /* Concentration.swift */; };
 		1842DE7B20EDAAD7002AD4CD /* Card.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1842DE7A20EDAAD7002AD4CD /* Card.swift */; };
 		1881B56720F72595007FE52D /* ConcentrationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1881B56620F72595007FE52D /* ConcentrationViewController.swift */; };
+		18EF281920F80B5C002DC26F /* ConcentrationThemeChooserViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18EF281820F80B5C002DC26F /* ConcentrationThemeChooserViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,7 @@
 		1842DE7820EDAA84002AD4CD /* Concentration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Concentration.swift; sourceTree = "<group>"; };
 		1842DE7A20EDAAD7002AD4CD /* Card.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Card.swift; sourceTree = "<group>"; };
 		1881B56620F72595007FE52D /* ConcentrationViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConcentrationViewController.swift; sourceTree = "<group>"; };
+		18EF281820F80B5C002DC26F /* ConcentrationThemeChooserViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConcentrationThemeChooserViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,6 +61,7 @@
 			isa = PBXGroup;
 			children = (
 				1881B56620F72595007FE52D /* ConcentrationViewController.swift */,
+				18EF281820F80B5C002DC26F /* ConcentrationThemeChooserViewController.swift */,
 				1842DE6620ED82BB002AD4CD /* AppDelegate.swift */,
 				1842DE7820EDAA84002AD4CD /* Concentration.swift */,
 				1842DE7A20EDAAD7002AD4CD /* Card.swift */,
@@ -142,6 +145,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				18EF281920F80B5C002DC26F /* ConcentrationThemeChooserViewController.swift in Sources */,
 				1842DE7B20EDAAD7002AD4CD /* Card.swift in Sources */,
 				1842DE6720ED82BB002AD4CD /* AppDelegate.swift in Sources */,
 				1881B56720F72595007FE52D /* ConcentrationViewController.swift in Sources */,
