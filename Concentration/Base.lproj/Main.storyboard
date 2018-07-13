@@ -15,7 +15,7 @@
         <scene sceneID="1MW-O0-viC">
             <objects>
                 <viewController id="okg-GQ-W9d" customClass="ConcentrationThemeChooserViewController" customModule="Concentration" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="Eh0-oH-334">
+                    <view key="view" contentMode="scaleToFill" misplaced="YES" id="Eh0-oH-334">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="1024"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
@@ -29,7 +29,7 @@
                                             <color key="titleColor" red="0.31526080899999998" green="0.73683190740000004" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         </state>
                                         <connections>
-                                            <segue destination="BYZ-38-t0r" kind="showDetail" identifier="Choose Theme" id="b7h-Pn-pyH"/>
+                                            <action selector="changeTheme:" destination="okg-GQ-W9d" eventType="touchUpInside" id="aev-JH-pvQ"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FB2-bo-Dgg">
@@ -39,7 +39,7 @@
                                             <color key="titleColor" red="0.31526080899999998" green="0.73683190740000004" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         </state>
                                         <connections>
-                                            <segue destination="BYZ-38-t0r" kind="showDetail" identifier="Choose Theme" id="dCu-59-IWS"/>
+                                            <action selector="changeTheme:" destination="okg-GQ-W9d" eventType="touchUpInside" id="j2P-c4-tfs"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aPD-5p-kC4">
@@ -49,7 +49,7 @@
                                             <color key="titleColor" red="0.31526080899999998" green="0.73683190740000004" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         </state>
                                         <connections>
-                                            <segue destination="BYZ-38-t0r" kind="showDetail" identifier="Choose Theme" id="yf0-eS-NC3"/>
+                                            <action selector="changeTheme:" destination="okg-GQ-W9d" eventType="touchUpInside" id="9BT-Bx-fPn"/>
                                         </connections>
                                     </button>
                                 </subviews>
@@ -63,6 +63,9 @@
                         <viewLayoutGuide key="safeArea" id="f6a-xc-K6k"/>
                     </view>
                     <navigationItem key="navigationItem" id="MEE-3D-u50"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="showDetail" identifier="Choose Theme" id="y2D-NY-NRB"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Wnd-Gu-5LG" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -236,7 +239,7 @@
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="thV-v6-6D4" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="j0C-vp-q85">
-                        <rect key="frame" x="0.0" y="20" width="320" height="50"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="50"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
@@ -315,6 +318,6 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="mhp-Yw-bKh"/>
+        <segue reference="y2D-NY-NRB"/>
     </inferredMetricsTieBreakers>
 </document>
